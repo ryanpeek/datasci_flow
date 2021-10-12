@@ -1,0 +1,91 @@
+---
+title: "Data Sci Distill"
+description: "Syllabus"
+output:
+  distill::distill_article:
+    toc: false
+    toc_depth: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Course title and instructor
+
+**Title:** TBA<br>
+**Unique:** TBA<br>
+
+
+**Instructor:** Ryan A. Peek<br>
+**Email:** rapeek@ucdavis.edu<br>
+**Office Hours:** TBA (open Zoom), or by appointment <br>
+**GitHub:** [ryanpeek](https://github.com/ryanpeek) <br>
+
+<!--
+**Teaching Assistant:** TBA<br>
+**Email:** TBA<br>
+**Office Hours:** TBA (open Zoom), or by appointment <br>
+**GitHub:** [et al](https://github.com/et_al)
+-->
+
+## Purpose and contents of the class
+
+While there remain many obstacles to tackling the growing challenges we face, significant progress can be made through implementation of basic data science education including understanding and using best practices for data management; and fostering open science practices that support replication and synthesis (e.g., developing and teaching open science research workflows, making datasets and code freely available).
+
+This seminar will be open to all CWS data denizens (so anyone who works with data) to train participants in the basic steps of using best practices in data science and project provenance using CWS specific projects. 
+Each participant is expected to have a project in mind that they currently work on or expect to work on which we will actively use to learn each phase of the data life cycle. 
+Furthermore, these steps are applicable regardless of the programming language or analytical tool being used, from Excel to R, to Python, and beyond. By the end of the seminar, each participant should understand and be able to implement:  
+
+ 1.	A Data Plan & Process (what is data plan, where will it live, how will it be stored)
+ 2.	Metadata Collection and Processing
+ 3.	Data Assurance and Analysis (basic data wrangling skills)
+ 4.	How to Preserve and Store Data (version control and repositories)
+ 5.	Publish and Share (make data accessible)
+ 6.	Discover and Integrate (process is reproducible and can be built on)
+
+
+## Prerequisites
+
+The class requires no prior knowledge of programming, nor is this an ecology or biology class. This seminar is about how to understand, organize, use, and share data using reproducible workflows.
+
+## Course Materials
+
+We will use many resources, but several key resources are:
+
+ - 1. [Data Science]() XXXX.
+
+
+## Topics covered
+
+<!-- ::: l-page -->
+
+------------------------------------------------------------------
+  Week  Topic                       Concepts covered
+------- --------------------------- ------------------------------
+1.      Introduction                Basic Workflows
+
+2.      Metadata                    Tools
+
+3.      Repositories                Data Wrangling
+
+
+----------------------------------------------------------------
+<!-- ::: -->
+
+## Computing requirements
+
+Data Science and associated workflows need to be learned by doing, and the seminar and associated class time will focus on working through problems and projects together.
+
+Everything will be available online. All lectures will be recorded and made available.
+
+## Course site
+
+All materials and assignments will be posted on the course webpage at:
+**WEBSITE**
+
+
+## Reuse {.appendix}
+
+Text and figures are licensed under Creative Commons Attribution [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
