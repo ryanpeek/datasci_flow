@@ -9,6 +9,8 @@
 # User-specific files
 .Ruserdata
 
+*.tex
+
 # htmls
 *.html
 
