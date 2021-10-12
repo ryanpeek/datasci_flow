@@ -1,2 +1,2 @@
 # datasci_flow
-detach workflows and data provenance
+datasci workflows and data provenance
