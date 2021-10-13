@@ -1,0 +1,146 @@
+---
+output: 
+  pdf_document:
+    keep_tex: true
+    fig_caption: yes
+    latex_engine: pdflatex
+    template: templates/svm-latex-syllabus.tex
+geometry: margin=1in
+
+title: "Data Sci & Provenance"
+author: Ryan Peek
+date: "Fall 2021"
+
+email: "rapeek@ucdavis.edu"
+web: "TBA"
+officehours: "TBA"
+office: "CWS"
+classroom: "*online*"
+classhours: "TBA"
+
+fontfamily: mathpazo
+fontsize: 11pt
+header-includes:
+   - \linespread{1.05}
+---
+
+```{r setup, include=FALSE, cache=F, message=F, warning=F, results="hide"}
+knitr::opts_chunk$set(cache=TRUE)
+knitr::opts_chunk$set(fig.path='figs/')
+knitr::opts_chunk$set(cache.path='_cache/')
+knitr::opts_chunk$set(warning=F, message=F)
+# knitr::opts_knit$get(kable.force.latex = TRUE)
+```
+
+
+
+```{r dates_bib, include=FALSE}
+knitr::opts_chunk$set(cache=FALSE, dev='pdf')
+mon <- as.Date("2021-09-24")
+# fri <- as.Date("2016-01-08")
+
+advdate <- function(obj, adv) {
+ tmon <- obj + 7*(adv-1)
+ tfri <- obj + 4 + 7*(adv-1)
+ tmon <- format(tmon, format="%m/%d")
+ tfri <- format(tfri, format="%m/%d")
+ zadv <- sprintf("%02d", adv)
+ tmp <- paste("Week ",zadv,sep='',", ", tmon," - ",tfri)
+ return(tmp)
+}
+
+# library(RefManageR)
+# library(knitcitations)
+# library(rcrossref)
+#bib <- ReadBib("master.bib")
+#myopts <- BibOptions(bib.style = "authoryear", style="latex", first.inits=FALSE, max.names = 20)
+
+```
+
+# Course Description
+
+While there remain many obstacles to tackling the growing challenges we face, significant progress can be made through implementation of basic data science education including understanding and using best practices for data management; and fostering open science practices that support replication and synthesis (e.g., developing and teaching open science research workflows, making datasets and code freely available).
+
+This seminar will be open to all CWS data denizens (so anyone who works with data) to train participants in the basic steps of using best practices in data science and project provenance using CWS specific projects. 
+Each participant is expected to have a project in mind that they currently work on or expect to work on which we will actively use to learn each phase of the data life cycle. 
+Furthermore, these steps are applicable regardless of the programming language or analytical tool being used, from Excel to R, to Python, and beyond. 
+
+# Seminar Objectives
+
+By the end of the seminar, each participant should understand and be able to implement:  
+
+ 1. A Data Plan & Process (what is data plan, where will it live, how will it be stored)
+ 1. Metadata Collection and Processing
+ 1. Data Assurance and Analysis (basic data wrangling skills)
+ 1. How to Preserve and Store Data (version control and repositories)
+ 1. Publish and Share (make data accessible)
+ 1. Discover and Integrate (process is reproducible and can be built on)
+
+
+<!--
+# Required Readings
+
+```{r, echo = FALSE, results="asis"} 
+#bib["vasquez2009twp", "wagner2007ws"]
+``` 
+\newpage
+
+-->
+
+# Prerequisites
+
+The class requires no prior knowledge of programming, nor is this an ecology or biology class. This seminar is about how to understand, organize, use, and share data using reproducible workflows.
+
+# Computing requirements
+
+Data Science and associated workflows need to be learned by doing, and the seminar and associated class time will focus on working through problems and projects together.
+
+Everything will be available online. All lectures will be recorded and made available.
+
+# Course Materials
+
+All materials and assignments will be posted on a webpage, and seminars will be recorded.
+
+
+# Schedule
+
+## `r advdate(mon, 1)`: Data Plan and Process
+
+Read associated documents on course website.
+  
+  - [Taking Good Notes](http://svmiller.com/blog/2014/09/taking-good-notes/)
+
+## `r advdate(mon, 2)`: Metadata
+
+ - Understand and use metadata
+ - Identify your own metadata
+ - Create a metadata file to store with your datasets
+ 
+##  `r advdate(mon, 3)`: Data Wrangling
+
+Some basic data wrangling skills will be covered using R:
+
+ - Joining data
+ - Pivoting data (go from wide to long/long to wide)
+ - Filtering data
+ - Import/Export
+
+
+##  `r advdate(mon, 4)`: Preserve and Store Data
+
+How do we keep our data safe and accessible? 
+
+ - Open source repositories
+ - Version control
+
+##  `r advdate(mon, 5)`: Publish and Share Data
+
+ - Go over various repositories, pros/cons, and how to use (i.e., Dryad vs. OSF)
+ 
+##  `r advdate(mon, 6)`: Integration and Updating
+
+If we have interest and time, talk about reproducible workflows and toolsets
+
+ - `snakemake`
+ - `targets`
+ 
